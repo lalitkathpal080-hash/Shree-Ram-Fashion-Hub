@@ -1,0 +1,74 @@
+<!DOCTYPEtml lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Slot | Shree Ram Fashion Hub</title>
+    <link rel="stylesheet" href="booking-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="booking-page-body">
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 12px;">
+                <img src="salon-logo.webp" alt="Logo" class="logo">
+                <div class="brand-name">
+                    <h1>SHREE RAM</h1>
+                    <span>Fashion Hub</span>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <main class="booking-container">
+        <h2 class="section-title">Schedule Your Visit 📅</h2>
+        
+        <form id="whatsappBookingForm" class="booking-form">
+            <div class="input-group">
+                <label>Your Name</label>
+                <input type="text" id="custName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="input-group">
+                <label>Select Services</label>
+                <div class="services-grid">
+                    <label class="check-item"><input type="checkbox" name="srv" value="Haircut"> Haircut</label>
+                    <label class="check-item"><input type="checkbox" name="srv" value="Facial"> Facial</label>
+                    <label class="check-item"><input type="checkbox" name="srv" value="Moustache"> Moustache</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Select Date</label>
+                <input type="date" id="bookDate" required>
+            </div>
+
+            <div class="input-group">
+                <label>Select Time (9 AM - 9 PM)</label>
+                <select id="bookTime" required>
+                    <option value="" disabled selected>Choose a time</option>
+                    <option value="9:00 AM">9:00 AM</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="11:00 AM">11:00 AM</option>
+                    <option value="12:00 PM">12:00 PM</option>
+                    <option value="1:00 PM">1:00 PM</option>
+                    <option value="2:00 PM">2:00 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="4:00 PM">4:00 PM</option>
+                    <option value="5:00 PM">5:00 PM</option>
+                    <option value="6:00 PM">6:00 PM</option>
+                    <option value="7:00 PM">7:00 PM</option>
+                    <option value="8:00 PM">8:00 PM</option>
+                    <option value="9:00 PM">9:00 PM</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%; margin-top: 10px;">
+                SEND BOOKING ON WHATSAPP 💬
+            </button>
+        </form>
+    </main>
+
+    <script src="booking-script.js"></script>
+</body>
+</html>

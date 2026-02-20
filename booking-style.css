@@ -1,0 +1,125 @@
+:root {
+    --beige: #F5F5DC;
+    --gold: #FFD700;
+    --luxury-gold: #DAA520;
+    --white: #FFFFFF;
+    --dark: #1a1a1a;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+}
+
+/* Header - Same as Index.html */
+header { 
+    padding: 15px 20px; 
+    border-bottom: 1px solid #eee; 
+    background: white; 
+}
+.header-container { 
+    display: flex; 
+    align-items: center; 
+    gap: 12px; 
+}
+.logo { 
+    width: 60px !important; 
+    height: 60px !important; 
+    border-radius: 12px; /* Same rounded corners */
+    object-fit: cover; 
+}
+.brand-name h1 { 
+    margin: 0; 
+    font-weight: 800; 
+    font-size: 24px; 
+    line-height: 1; 
+    color: var(--dark);
+    text-transform: uppercase;
+}
+.brand-name span { 
+    font-size: 14px; 
+    color: var(--luxury-gold); 
+    font-weight: 600; 
+    text-transform: uppercase; 
+    display: block;
+    margin-top: 2px;
+}
+
+/* Page Content */
+.booking-container {
+    padding: 30px 20px;
+    background: var(--beige);
+    min-height: 100vh;
+}
+
+.booking-form {
+    background: white;
+    padding: 20px 15px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    width: 90%;
+    margin: 0 auto; 
+}
+
+h2.section-title {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #f0f0f0;
+    border-radius: 15px;
+    font-family: 'Poppins';
+    outline: none;
+    max-width: 100%; 
+    font-size: 15px;
+    outline: none;
+    box-sizing: border-box;
+    display: block;
+}
+
+/* Services Grid Fix */
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.check-item {
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #eee;
+}
+
+/* Submit Button - Pure Black Text */
+.btn-primary {
+    background: var(--gold);
+    color: #000000 !important;
+    border: none;
+    padding: 16px;
+    width: 100%;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 20px;
+    box-shadow: 0 5px 15px rgba(255, 215, 0, 0.4);
+    cursor: pointer;
+}

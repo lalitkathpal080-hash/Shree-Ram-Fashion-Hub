@@ -1,0 +1,182 @@
+:root {
+    --beige: #F5F5DC;
+    --gold: #FFD700;
+    --luxury-gold: #DAA520;
+    --white: #FFFFFF;
+    --dark: #1a1a1a;
+    --radius: 20px;
+}
+
+body {
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    color: var(--dark);
+}
+
+/* Header Fix */
+header { padding: 15px 20px; border-bottom: 1px solid #eee; }
+.header-container { display: flex; align-items: center; gap: 12px; }
+.logo { width: 60px; height: 60px; border-radius: 12px; }
+
+.brand-name h1 {
+    margin: 0; font-weight: 800; font-size: 24px;
+    letter-spacing: 1px; line-height: 1;
+}
+
+.brand-name span {
+    font-size: 14px; color: var(--luxury-gold);
+    font-weight: 600; text-transform: uppercase;
+    display: block; margin-top: 2px;
+}
+
+/* Hero Overlap Fix */
+.hero { background: var(--beige); padding: 15px 0; display: flex; justify-content: center; }
+.hero-container { position: relative; width: 92%; height: 320px; border-radius: 25px; overflow: hidden; }
+.hero-img { width: 100%; height: 100%; object-fit: cover; }
+
+.btn-primary {
+    background: var(--gold); border: none; padding: 15px 30px;
+    border-radius: 50px; font-weight: 700; font-size: 16px;
+    cursor: pointer; text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1) color: #000000; text-allignment: centre;
+}
+
+.btn-book {
+    position: absolute; bottom: 20px; left: 50%;
+    transform: translateX(-50%); width: 80%; z-index: 10;
+    color: #000000;
+}
+
+/* Services slider fix */
+.services { padding: 20px 10px; }
+.service-category h3 { margin-left: 10px; font-size: 18px; }
+.slider { display: flex; overflow-x: auto; gap: 15px; padding: 10px; }
+.slider::-webkit-scrollbar { display: none; }
+.v-card { min-width: 150px; background: var(--beige); padding: 12px; border-radius: var(--radius); text-align: center; }
+.v-card img { width: 100%; height: 120px; object-fit: cover; border-radius: 12px; margin-bottom: 8px; }
+
+/* Gallery slider fix */
+.gallery { padding: 20px 0; }
+.section-title { text-align: center; color: var(--luxury-gold); font-size: 24px; }
+.gallery-slider { display: flex; overflow-x: auto; gap: 15px; padding: 10px 20px; }
+.gallery-slider::-webkit-scrollbar { display: none; }
+.gallery-slider img { min-width: 85%; height: 300px; object-fit: cover; border-radius: var(--radius); }
+
+/* About & Location */
+.about { padding: 40px 20px; text-align: center; background: var(--beige); display: flex; flex-direction: column; align-items: center; padding: 40px 20px
+       }
+.location { padding: 30px 20px; text-align: center; }
+.map-container { border-radius: var(--radius); overflow: hidden; margin: 15px 0;
+    width: 100%;
+    height: 250px;
+    display: block; }
+.map-container iframe { width: 100%; height: 100%; display: block; }
+               
+.maps-btn { display: inline-block; text-decoration: none; color: var(--dark); margin-top: 10px; }
+
+footer { padding: 20px; text-align: center; font-size: 12px; opacity: 0.5; }
+/* Language Modal Styling */
+.modal {
+    position: fixed;
+    z-index: 9999;
+    left: 0; top: 0; 
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+    display: flex; justify-content: center; align-items: center;
+}
+
+.modal-content {
+    background: var(--beige);
+    padding: 40px 20px;
+    border-radius: 30px;
+    text-align: center;
+    width: 85%;
+    max-width: 400px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.modal-content h2 { margin-bottom: 25px; font-size: 22px; color: var(--dark); }
+
+.lang-btns { display: flex; flex-direction: column; gap: 15px; }
+
+.lang-btns button {
+    padding: 15px;
+    border-radius: 50px;
+    border: 2px solid var(--luxury-gold);
+    background: white;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.lang-btns button:hover {
+    background: var(--gold);
+    transform: scale(1.05);
+}
+/* Instagram Golden Button Fix */
+.insta-container {
+    background: var(--beige);
+    padding: 40px 20px;
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.insta-btn-golden {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gold); /* Pehle jaisa Yellow Golden */
+    color: var(--dark);
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    gap: 10px;
+}
+
+.insta-btn-golden img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Category Slider Styling */
+.services { padding: 20px 10px; }
+.service-category h3 { margin: 20px 0 10px 10px; font-weight: 700; color: var(--dark); }
+.slider { display: flex; overflow-x: auto; gap: 15px; padding: 10px; scroll-snap-type: x mandatory; }
+.slider::-webkit-scrollbar { display: none; }
+
+.v-card {
+    min-width: 160px; background: #fff; padding: 12px;
+    border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center; scroll-snap-align: start;
+}
+
+.v-card img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; }
+.v-card span { display: block; margin-top: 8px; font-weight: 600; font-size: 14px; }
+/* Hero Section Button Fix - Center Alignment & Black Text */
+.btn-book {
+    position: absolute !important;
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important; /* Perfect Center */
+    width: 80% !important;
+    color: #000000 !important; /* Pure Black Text */
+    font-weight: 800 !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* General Primary Button Color Fix (About Section etc.) */
+.btn-primary {
+    color: #000000 !important; /* Text Black */
+    font-weight: 800 !important;
+    text-decoration: none !important;
+}
