@@ -180,3 +180,36 @@ footer { padding: 20px; text-align: center; font-size: 12px; opacity: 0.5; }
     font-weight: 800 !important;
     text-decoration: none !important;
 }
+/* 1. Global Fix: Site ko screen ke andar lock karne ke liye */
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important; /* Isse right side wala scroll khatam ho jayega */
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Map Fix: Isse map bada nahi hoga aur layout nahi bigdega */
+iframe {
+    width: 100% !important; /* Screen ki width ke barabar */
+    height: 300px !important; /* Lambai fix */
+    border: none;
+    border-radius: 15px;
+    display: block;
+    margin: 20px auto; /* Center mein lane ke liye */
+}
+
+/* 3. Explore & Services Grid Fix: Mobile par 1 ya 2 column ke liye */
+.explore-container, .services-grid, .category-grid {
+    display: flex;
+    flex-wrap: wrap; /* Images neeche shift ho jayengi side mein bhagne ke bajaye */
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.explore-container img, .category-card img {
+    max-width: 100% !important; /* Photo screen se bahar nahi jayegi */
+    height: auto;
+    border-radius: 12px;
+}
